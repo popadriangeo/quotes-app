@@ -1,0 +1,23 @@
+{
+  "name": "quotes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main/main.js",
+  "scripts": {
+    "copy-assets": "ncp src/renderer/index.html dist/renderer/index.html && ncp src/renderer/styles.css dist/renderer/styles.css",
+    "start": "tsc && electron .",
+    "build": "tsc && electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^24.1.3",
+    "electron-builder": "^23.6.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0"
+  }
+}
